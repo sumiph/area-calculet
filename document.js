@@ -61,3 +61,12 @@ function Pentagon(){
     console.log(pentatotalArea) ;
     setInnertext ( 'penspen' , pentatotalArea);
 }
+
+function Ellipsefun(){
+    const ellipsefunFrist = inputValue('inputEll1');
+    const ellipseaFunsecend = inputValue('inputEll2');
+    const ellTotleArea = 3.1416 * ellipsefunFrist * ellipseaFunsecend ;
+    
+    console.log(ellTotleArea);
+    setInnertext('setText',ellTotleArea);
+}
