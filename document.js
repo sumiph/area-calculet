@@ -26,6 +26,10 @@ function setInnertext( elementId,area){
 function Triangle(){
  const bass = inputValue('bass') ;
  const hight = inputValue('hight' );
+ if(isNaN(bass)|| isNaN(hight)){
+    alert('please insert number')
+    return;
+ }
  const totleTriangle = 0.5 * bass * hight ;
  console.log (totleTriangle)
   setInnertext('totat-area' , totleTriangle);
@@ -33,6 +37,10 @@ function Triangle(){
 function rectangele(){
     const rectwidth = inputValue('rectangelWidth')
     const rectlength = inputValue('rectanglelength')
+    if(isNaN(rectwidth)|| isNaN(rectlength)){
+        alert('please insert number')
+        return;
+     }
     const rectTotleArea = rectwidth * rectlength ;
     console.log ( rectTotleArea);
     setInnertext( 'rectangleArea' , rectTotleArea);
@@ -41,6 +49,10 @@ function rectangele(){
 function parallelogram(){
     const pralwidth = inputValue('parallalBass');
     const parahight = inputValue('paralalhight');
+    if(isNaN(pralwidth)|| isNaN(parahight)){
+        alert('please insert number')
+        return;
+     }
     const paralalTotleAriya = pralwidth *  parahight ;
     console.log(paralalTotleAriya);
     setInnertext('paralalspen', paralalTotleAriya);
@@ -48,7 +60,11 @@ function parallelogram(){
 
 function Rhombus(){
     const reomb1= inputValue('rohomb1');
-    const reomb2 = inputValue('rohomb2')
+    const reomb2 = inputValue('rohomb2');
+    if(isNaN(reomb1)|| isNaN(reomb2)){
+        alert('please insert number')
+        return;
+     }
     const rhombushTotleArea = 0.5 * reomb1 * reomb2 ;
     console.log(rhombushTotleArea) ;
     setInnertext('setrombh', rhombushTotleArea);
@@ -56,7 +72,11 @@ function Rhombus(){
 
 function Pentagon(){
     const pentagoninput1 = inputValue( 'inputPen1');
-    const pentafoninput2 = inputValue('inputpen2')
+    const pentafoninput2 = inputValue('inputpen2');
+    if(isNaN(pentagoninput1)|| isNaN(pentafoninput2)){
+        alert('please insert number')
+        return;
+     }
     const pentatotalArea = 0.5 *  pentagoninput1 * pentafoninput2 ;
     console.log(pentatotalArea) ;
     setInnertext ( 'penspen' , pentatotalArea);
@@ -65,6 +85,10 @@ function Pentagon(){
 function Ellipsefun(){
     const ellipsefunFrist = inputValue('inputEll1');
     const ellipseaFunsecend = inputValue('inputEll2');
+    if(isNaN(ellipsefunFrist)|| isNaN(ellipseaFunsecend)){
+        alert('please insert number')
+        return;
+     }
     const ellTotleArea = 3.1416 * ellipsefunFrist * ellipseaFunsecend ;
     
     console.log(ellTotleArea);
